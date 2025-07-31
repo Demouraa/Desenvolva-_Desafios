@@ -39,9 +39,9 @@ public class Produto {
 
     //Metodo para exibir resumo do produto
     public void exibirResumo() {
-        System.out.println("Produto: " + nome);
-        System.out.println("Preço: R$ " + preco);
-        System.out.println("Estoque: " + estoque + " unidades");
+        System.out.println("Produto: " + nome + "\n");
+        System.out.println("Preço: R$ " + preco + "\n");
+        System.out.println("Estoque: " + estoque + " unidades" + "\n");
     }
 }
 
