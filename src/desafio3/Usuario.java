@@ -22,7 +22,7 @@ public abstract class Usuario {
         System.out.println("Email: " + email);
     }
 
-    // Método usado apenas para redefinição interna
+    //Metodo usado apenas para redefinição interna
     protected void setSenha(String novaSenha) {
         this.senha = novaSenha;
     }

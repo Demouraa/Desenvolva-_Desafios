@@ -15,8 +15,7 @@ public class Administrador extends Usuario {
         if (SegurancaUtils.validarSenhaForte(novaSenha)) {
             setSenha(novaSenha);
             System.out.println("Senha redefinida com sucesso.");
-        } else {
-            System.out.println("Senha fraca. A senha deve ter mais de 8 caracteres e pelo menos um número.");
         }
+        System.out.println("Senha fraca. A senha deve ter mais de 8 caracteres e pelo menos um número.");
     }
 }
