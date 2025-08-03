@@ -1,13 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        Produto p1 = new Produto("Camisa", 99.90, 10);
-        Produto p2 = new Produto("Calça", 299.90);
+        Reembolso r1 = new Reembolso("Carla", 5);
+        Reembolso r2 = new Reembolso("João", 10);
+        Reembolso r3 = new Reembolso("Mariana", 8);
 
-        p2.adicionarEstoque(5);
-        p1.vender(3);
-        p2.vender(10);
+        // r1 - sem hospedagem
+        double total1 = r1.calcularReembolso(100.0, 50.0);
+        r1.imprimirResumoReembolso(total1);
 
-        p1.exibirResumo();
-        p2.exibirResumo();
+        // r2 - com hospedagem
+        double total2 = r2.calcularReembolso(150.0, 60.0, 100.0);
+        r2.imprimirResumoReembolso(total2);
+
+        // r3 - com hospedagem
+        double total3 = r3.calcularReembolso(120.0, 40.0, 80.0);
+        r3.imprimirResumoReembolso(total3);
     }
 }
