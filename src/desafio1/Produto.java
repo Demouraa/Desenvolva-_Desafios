@@ -1,3 +1,5 @@
+package desafio1;
+
 public class Produto {
     private String nome;
     private double preco;
@@ -39,7 +41,7 @@ public class Produto {
 
     //Metodo para exibir resumo do produto
     public void exibirResumo() {
-        System.out.println("Produto: " + nome + "\n");
+        System.out.println("desafio1.Produto: " + nome + "\n");
         System.out.println("Preço: R$ " + preco + "\n");
         System.out.println("Estoque: " + estoque + " unidades" + "\n");
     }
